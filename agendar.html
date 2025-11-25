@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agendar Horário | Embelezamento Afro</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@300;400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="agendar.css">
+</head>
+<body>
+
+  <header>
+    <div class="marca-site">Embelezamento Afro</div>
+    <div class="botao-mobile" onclick="toggleMenu()">☰</div>
+    <nav>
+      <ul id="lista-navegacao">
+        <li><a href="index.html#inicio">Início</a></li>
+        <li><a href="index.html#servicos">Serviços</a></li>
+        <li><a href="index.html#cursos">Curso</a></li>
+        <li><a href="index.html#sobre">Sobre</a></li>
+        <li><a href="agendar.html">Agendar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-agenda">
+    <section class="container-agenda">
+      <form id="form-agendar" novalidate>
+        <h1>Agendar Atendimento</h1>
+
+        <div class="campo">
+          <input id="nome" name="nome" type="text" placeholder=" " required />
+          <label for="nome">Nome</label>
+        </div>
+
+        <div class="campo">
+          <input id="email" name="email" type="email" placeholder=" " required />
+          <label for="email">E-mail</label>
+        </div>
+
+        <div class="campo">
+          <input id="telefone" name="telefone" type="tel" inputmode="numeric" placeholder=" " required />
+          <label for="telefone">Telefone (somente números)</label>
+          <small class="erro" aria-live="polite"></small>
+        </div>
+
+        <div class="campo">
+          <input id="data" name="data" type="date" placeholder=" " required />
+          <label for="data">Data</label>
+        </div>
+
+        <div class="campo campo-select">
+          <select id="horario" name="horario" required>
+            <option value="" disabled selected>Escolha um horário</option>
+            <!-- Opções de 30 em 30 minutos entre 08:00 e 18:00 -->
+            <option value="08:00">08:00</option>
+            <option value="08:30">08:30</option>
+            <option value="09:00">09:00</option>
+            <option value="09:30">09:30</option>
+            <option value="10:00">10:00</option>
+            <option value="10:30">10:30</option>
+            <option value="11:00">11:00</option>
+            <option value="11:30">11:30</option>
+            <option value="12:00">12:00</option>
+            <option value="12:30">12:30</option>
+            <option value="13:00">13:00</option>
+            <option value="13:30">13:30</option>
+            <option value="14:00">14:00</option>
+            <option value="14:30">14:30</option>
+            <option value="15:00">15:00</option>
+            <option value="15:30">15:30</option>
+            <option value="16:00">16:00</option>
+            <option value="16:30">16:30</option>
+            <option value="17:00">17:00</option>
+            <option value="17:30">17:30</option>
+            <option value="18:00">18:00</option>
+          </select>
+          <label for="horario">Horário (08:00–18:00)</label>
+        </div>
+
+        <div class="campo campo-select">
+          <select id="selecao" name="selecao" required>
+            <option value="" disabled selected>Escolha uma opção</option>
+            <option value="ex1">ex1</option>
+            <option value="ex2">ex2</option>
+          </select>
+          <label for="selecao">Seleção</label>
+        </div>
+
+        <button type="submit" class="botao botao-primario">Agendar</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

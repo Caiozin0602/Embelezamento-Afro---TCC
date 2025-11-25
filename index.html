@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embelezamento Afro | Amanda Souza</title>
+    <link rel="shortcut icon" href="./Imgs/Design sem nome.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@300;400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="marca-site">Embelezamento Afro</div>
+        <div class="botao-mobile" onclick="toggleMenu()">☰</div>
+        <nav>
+            <ul id="lista-navegacao">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#cursos">Curso</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="agendar.html">Agendar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="capa" id="inicio">
+        <div class="capa-conteudo">
+            <h1>Celebrando sua beleza natural</h1>
+            <p>Especialistas em cabelos crespos, cacheados e a identidade que floresce em cada fio. O cuidado que você merece.</p>
+            <div class="grupo-botoes">
+                <a href="agendar.html" class="botao botao-primario">Agendar Horário</a>
+                <a href="#cursos" class="botao botao-secundario">Conheça o Curso</a>
+            </div>
+        </div>
+        <div class="capa-imagem">
+            <img src="./Imgs/Amanda_roupa_marrom.jpg" alt="Modelo com cabelo afro">
+        </div>
+    </section>
+
+    <section class="servicos" id="servicos">
+        <h2 class="titulo-secao">Nossos Serviços</h2>
+        
+        <div class="grid-servicos">
+            <div class="cartao-servico">
+                <div class="container-imagem">
+                    <img src="./Imgs/Trança_afro.png" alt="Tranças Afro">
+                </div>
+                <h3>Tranças Afro</h3>
+                <a href="#" class="botao-pequeno">Ver detalhes</a>
+            </div>
+
+            <div class="cartao-servico">
+                <div class="container-imagem">
+                    <img src="./Imgs/Goivo.png" alt="Twists">
+                </div>
+                <h3>Goivo</h3>
+                <a href="#" class="botao-pequeno">Ver detalhes</a>
+            </div>
+
+            <div class="cartao-servico">
+                <div class="container-imagem">
+                    <img src="./Imgs/Croshed.png" alt="Crochet Braids">
+                </div>
+                <h3>Crochet Braids</h3>
+                <a href="#" class="botao-pequeno">Ver detalhes</a>
+            </div>
+
+            <div class="cartao-servico">
+                <div class="container-imagem">
+                    <img src="./Imgs/Barrel_Twist.png" alt="Tratamento Capilar">
+                </div>
+                <h3>Barrel Twist</h3>
+                <a href="#" class="botao-pequeno">Ver detalhes</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cursos" id="cursos">
+        <h2 class="titulo-secao">Curso</h2>
+
+        <div class="grid-cursos">
+            <div class="curso-card">
+                <div class="curso-imagem">
+                    <img src="./Imgs/Amanda_segurando_postila.jpg" alt="Amanda Souza - Instrutora">
+                </div>
+                <div class="curso-info">
+                    <h3>Corte e Estilo para Cabelos Afro</h3>
+                    <p>Aprenda técnicas práticas de corte, finalização e cuidado para cabelos crespos e cacheados. O curso aborda desde a preparação, escolha de linhas de corte, texturização e estilos clássicos até opções modernas de finalização com produto mínimo.</p>
+
+                    <ul>
+                        <li>Carga Horaria: 4 Dias | 10h ás 17h |</li>
+                        <li>Formato: Material didático, Certificado e todas aulas praticas em video</li>
+                    </ul>
+
+                    <div class="curso-botoes">
+                        <a href="TRANÇANDO DO ZERO - 2026.pdf" class="botao botao-primario" target="_blank">Saiba mais (PDF)</a>
+                        <a href="https://wa.me/5511999999999" class="botao-pequeno" target="_blank" rel="noopener">Fale no WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+        <div class="sobre-imagem">
+            <img src="./Imgs/Amanda_sentada_notebook.jpg" alt="Amanda Souza">
+        </div>
+        <div class="sobre-texto">
+            <h2>Sobre a Criadora</h2>
+            <p>Olá, eu sou <strong>Amanda Souza</strong>, fundadora da Embelezamento Afro. Sou uma profissional de artesanato capilar que transforma a autoestima de mulheres negras através do cuidado com o cabelo natural.</p>
+            <p>Meu propósito é valorizar nossa raiz, nossa estética e nossa história, oferecendo não apenas um serviço, mas uma experiência de reconexão.</p>
+            <a href="#" class="botao botao-primario sobre-cta">Conheça minha trajetória</a>
+        </div>
+    </section>
+
+    <footer id="contato">
+        <div class="conteudo-rodape">
+            <div class="coluna-rodape">
+                <h4>Contatos</h4>
+                <p>Email: contato@emblezamentoafro.com</p>
+                <p>Telefone: (11) 98788-4221</p>
+            </div>
+            <div class="coluna-rodape">
+                <h4>Endereço</h4>
+                <p>Rua da Beleza, 123</p>
+                <p>São Paulo - SP</p>
+            </div>
+            <div class="coluna-rodape">
+                <h4>Redes Sociais</h4>
+                <p>@emblezamentoafro</p>
+            </div>
+        </div>
+        <div class="rodape-inferior">
+            &copy; 2025 Embelezamento Afro - Amanda Souza. Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
