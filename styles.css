@@ -87,7 +87,7 @@ nav a:hover {
    CAPA
    ========================================= */
 .capa {
-    margin-top: 80px; /* Compensar o menu fixo */
+    margin-top: 80px;
     background: linear-gradient(135deg, var(--rose-clay) 0%, var(--pale-peach) 100%);
     padding: 4rem 5%;
     display: flex;
@@ -95,6 +95,7 @@ nav a:hover {
     justify-content: space-between;
     min-height: 85vh; /* Altura quase cheia da tela */
     gap: 2rem;
+    
 }
 
 .capa-conteudo {
@@ -105,14 +106,15 @@ nav a:hover {
 .capa h1 {
     font-family: var(--font-titulo);
     font-size: 3.5rem;
-    color: var(--white);
     line-height: 1.1;
     margin-bottom: 1rem;
+    
+    color: whitesmoke;
 }
 .capa p {
     font-size: 1.2rem;
-    color: rgba(255,255,255, 0.9);
     margin-bottom: 2rem;
+    color: whitesmoke;
 }
 
 .grupo-botoes {
@@ -124,7 +126,7 @@ nav a:hover {
     padding: 12px 30px;
     border-radius: 30px;
     font-family: var(--font-botoes);
-    font-weight: bold;
+    font-weight: 500;
     text-transform: uppercase;
     font-size: 0.9rem;
     cursor: pointer;
@@ -165,6 +167,72 @@ nav a:hover {
     max-height: 500px;
     object-fit: cover;
 }
+
+/* =========================================
+   CURSOS
+   ========================================= */
+.cursos {
+    padding: 2rem 5%;
+    background-color: var(--sandy-beige);
+    text-align: center;
+}
+
+.cursos > .titulo-secao {
+    margin-bottom: 2rem;
+}
+
+.grid-cursos {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.curso-card {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    gap: 2.5rem;
+    background: rgba(255,255,255,0.9);
+    padding: 2.5rem;
+    border-radius: 15px;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+.curso-card:hover {
+    transform: translateY(-5px);
+}
+
+.curso-imagem {
+    flex: 0 0 260px;
+}
+
+.curso-imagem img {
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 5px solid var(--white);
+}
+
+.curso-info {
+    flex: 1;
+    text-align: left;
+}
+
+.curso-info h3 {
+    font-family: var(--font-titulo);
+    font-size: 1.8rem;
+    color: var(--burnt-umber);
+    margin-bottom: 0.75rem;
+}
+
+.curso-info p { margin-bottom: 1.25rem; font-size: 1rem; }
+
+.curso-info ul { margin: 0.75rem 0 1.5rem 1rem; }
+
+.curso-botoes { display: flex; gap: 1.25rem; }
 
 /* =========================================
    SERVIÇOS
@@ -243,11 +311,11 @@ nav a:hover {
 }
 
 /* =========================================
-   SOBRE A AMANDA (BIOGRAFIA)
+   BIOGRAFIA
    ========================================= */
 .sobre {
     padding: 5rem 5%;
-    background-color: var(--pale-peach); /* Fundo diferente conforme imagem */
+    background-color: var(--pale-peach);
     display: flex;
     align-items: center;
     gap: 4rem;
@@ -358,79 +426,12 @@ footer {
         box-shadow: 0 10px 10px rgba(0,0,0,0.1);
     }
 
-    nav ul.ativo { display: flex; } /* Classe adicionada via JS */
-}
-
-/* =========================================
-   CURSOS
-   ========================================= */
-.cursos {
-    padding: 2rem 5%;
-    background-color: var(--sandy-beige);
-    text-align: center;
-}
-
-.cursos > .titulo-secao {
-    margin-bottom: 2rem;
-}
-
-.grid-cursos {
-    display: flex;
-    justify-content: center;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.curso-card {
-    width: 100%;
-    max-width: 1100px;
-    display: flex;
-    gap: 2.5rem;
-    background: rgba(255,255,255,0.9);
-    padding: 2.5rem;
-    border-radius: 15px;
-    align-items: center;
-    transition: transform 0.3s;
-}
-
-.curso-card:hover {
-    transform: translateY(-5px);
-}
-
-.curso-imagem {
-    flex: 0 0 260px;
-}
-
-.curso-imagem img {
-    width: 260px;
-    height: 260px;
-    object-fit: cover;
-    border-radius: 15px;
-    border: 5px solid var(--white);
-}
-
-.curso-info {
-    flex: 1;
-    text-align: left;
-}
-
-.curso-info h3 {
-    font-family: var(--font-titulo);
-    font-size: 1.8rem;
-    color: var(--burnt-umber);
-    margin-bottom: 0.75rem;
-}
-
-.curso-info p { margin-bottom: 1.25rem; font-size: 1rem; }
-
-.curso-info ul { margin: 0.75rem 0 1.5rem 1rem; }
-
-.curso-botoes { display: flex; gap: 1.25rem; }
-
-@media (max-width: 900px) {
+    nav ul.ativo { display: flex; } 
+    @media (max-width: 900px) {
     .grid-cursos { padding: 0 1rem; }
     .curso-card { flex-direction: column; text-align: center; }
     .curso-imagem { flex-basis: auto; }
     .curso-imagem img { width: 100%; height: auto; max-height: 360px; }
     .curso-info { text-align: center; }
+}
 }
