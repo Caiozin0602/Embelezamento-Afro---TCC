@@ -1,5 +1,5 @@
 // =========================================
-// JAVASCRIPT (FUNCIONALIDADE)
+// JAVASCRIPT
 // =========================================
 
 // Função para abrir/fechar menu no celular
