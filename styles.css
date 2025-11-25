@@ -1,5 +1,5 @@
 /* =========================================
-   CONFIGURAÇÕES GERAIS (RESET E VARIÁVEIS)
+   Fonts e cores
    ========================================= */
 :root {
     /* Paleta de Cores Solicitada */
@@ -35,7 +35,7 @@ ul { list-style: none; }
 img { max-width: 100%; display: block; }
 
 /* =========================================
-    MENU FIXO (HEADER)
+    HEADER
     ========================================= */
 header {
      background-color: rgba(249, 231, 211, 0.95); /* Sandy Beige com transparência */
@@ -84,7 +84,7 @@ nav a:hover {
 }
 
 /* =========================================
-   CAPA (SEÇÃO INICIAL)
+   CAPA
    ========================================= */
 .capa {
     margin-top: 80px; /* Compensar o menu fixo */
@@ -167,7 +167,7 @@ nav a:hover {
 }
 
 /* =========================================
-   SERVIÇOS (GRID)
+   SERVIÇOS
    ========================================= */
 .servicos {
     padding: 5rem 5%;
