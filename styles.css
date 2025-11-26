@@ -9,11 +9,14 @@
     --terracotta: #B56C58;
     --sandy-beige: #F9E7D3;
     --white: #ffffff;
-    
+
     /* Fontes */
-    --font-titulo: 'Playfair Display', serif; /* Elegante */
-    --font-corpo: 'Lato', sans-serif; /* Limpa */
-    --font-botoes: 'Roboto', sans-serif; /* Técnica */
+    --font-titulo: 'Playfair Display', serif;
+    /* Elegante */
+    --font-corpo: 'Lato', sans-serif;
+    /* Limpa */
+    --font-botoes: 'Roboto', sans-serif;
+    /* Técnica */
 }
 
 * {
@@ -27,20 +30,35 @@ body {
     color: var(--burnt-umber);
     background-color: var(--sandy-beige);
     line-height: 1.6;
-    overflow-x: hidden; /* Evita rolagem lateral indesejada */
+    overflow-x: hidden;
+    /* Evita rolagem lateral indesejada */
 }
 
-a { text-decoration: none; color: inherit; transition: 0.3s; }
-ul { list-style: none; }
-img { max-width: 100%; display: block; }
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
 
 /* =========================================
     HEADER
     ========================================= */
 header {
-     background-color: rgba(249, 231, 211, 0.95); /* Sandy Beige com transparência */
-    backdrop-filter: blur(10px); /* Efeito de vidro */
-    position: fixed; /* FIXO NO TOPO */
+    background-color: rgba(249, 231, 211, 0.95);
+    /* Sandy Beige com transparência */
+    backdrop-filter: blur(10px);
+    /* Efeito de vidro */
+    position: fixed;
+    /* FIXO NO TOPO */
     top: 0;
     left: 0;
     width: 100%;
@@ -93,9 +111,10 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 85vh; /* Altura quase cheia da tela */
+    min-height: 85vh;
+    /* Altura quase cheia da tela */
     gap: 2rem;
-    
+
 }
 
 .capa-conteudo {
@@ -108,9 +127,10 @@ nav a:hover {
     font-size: 3.5rem;
     line-height: 1.1;
     margin-bottom: 1rem;
-    
+
     color: whitesmoke;
 }
+
 .capa p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
@@ -142,10 +162,16 @@ nav a:hover {
 .botao-primario:hover {
     background-color: var(--burnt-umber);
     border-color: var(--burnt-umber);
+    transform: scale(1.05);
+}
+.botao-primario:active {
+    background-color: var(--burnt-umber);
+    border-color: var(--burnt-umber);
+    transform: scale(0.95);
 }
 
 .botao-secundario {
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(255, 255, 255, 0.2);
     color: white;
     border: 2px solid white;
 }
@@ -162,8 +188,9 @@ nav a:hover {
 }
 
 .capa-imagem img {
-    border-radius: 20px 0 20px 0; /* Estilo da foto */
-    box-shadow: 20px 20px 0px rgba(0,0,0,0.1);
+    border-radius: 20px 0 20px 0;
+    /* Estilo da foto */
+    box-shadow: 20px 20px 0px rgba(0, 0, 0, 0.1);
     max-height: 500px;
     object-fit: cover;
 }
@@ -177,7 +204,7 @@ nav a:hover {
     text-align: center;
 }
 
-.cursos > .titulo-secao {
+.cursos>.titulo-secao {
     margin-bottom: 2rem;
 }
 
@@ -193,7 +220,7 @@ nav a:hover {
     max-width: 1100px;
     display: flex;
     gap: 2.5rem;
-    background: rgba(255,255,255,0.9);
+    background: rgba(255, 255, 255, 0.9);
     padding: 2.5rem;
     border-radius: 15px;
     align-items: center;
@@ -228,11 +255,19 @@ nav a:hover {
     margin-bottom: 0.75rem;
 }
 
-.curso-info p { margin-bottom: 1.25rem; font-size: 1rem; }
+.curso-info p {
+    margin-bottom: 1.25rem;
+    font-size: 1rem;
+}
 
-.curso-info ul { margin: 0.75rem 0 1.5rem 1rem; }
+.curso-info ul {
+    margin: 0.75rem 0 1.5rem 1rem;
+}
 
-.curso-botoes { display: flex; gap: 1.25rem; }
+.curso-botoes {
+    display: flex;
+    gap: 1.25rem;
+}
 
 /* =========================================
    SERVIÇOS
@@ -253,26 +288,32 @@ nav a:hover {
 .grid-servicos {
     display: grid;
     /* Cria colunas automáticas responsivas */
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
 }
 
 .cartao-servico {
-    background: rgba(255,255,255,0.5);
+    background: rgba(255, 255, 255, 0.5);
     padding: 1.5rem;
     border-radius: 15px;
     transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .cartao-servico:hover {
-    transform: translateY(-5px); /* Leve subida ao passar o mouse no card */
+    transform: translateY(-5px);
+    /* Leve subida ao passar o mouse no card */
 }
 
 /* CONTÊINER DA IMAGEM COM ZOOM */
 .container-imagem {
     width: 100%;
     height: 250px;
-    overflow: hidden; /* Essencial para o zoom não vazar */
+    overflow: hidden;
+    /* Essencial para o zoom não vazar */
     border-radius: 15px;
     margin-bottom: 1rem;
 }
@@ -281,7 +322,8 @@ nav a:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.5s ease; /* Suavidade do zoom */
+    transition: transform 0.5s ease;
+    /* Suavidade do zoom */
 }
 
 /* EFEITO DE ZOOM AO PASSAR O MOUSE */
@@ -305,9 +347,15 @@ nav a:hover {
     align-items: center;
     justify-content: center;
 }
-    
+
 .botao-pequeno:hover {
     background-color: var(--terracotta);
+    transform: scale(1.15);
+
+}
+.botao-pequeno:active {
+    background-color: var(--terracotta);
+    transform: scale(0.95);
 }
 
 /* =========================================
@@ -326,7 +374,8 @@ nav a:hover {
 }
 
 .sobre-imagem img {
-    border-radius: 500px 500px 0 0; /* Formato Arco/Cúpula */
+    border-radius: 500px 500px 0 0;
+    /* Formato Arco/Cúpula */
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
@@ -349,7 +398,6 @@ nav a:hover {
     font-size: 1.1rem;
 }
 
-/* Estilo do CTA na seção sobre (removido do atributo inline) */
 .sobre-cta {
     background-color: var(--burnt-umber);
     border: none;
@@ -382,29 +430,34 @@ footer {
 
 .rodape-inferior {
     margin-top: 2rem;
-    border-top: 1px solid rgba(255,255,255,0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
     padding-top: 1rem;
     font-size: 0.9rem;
 }
 
 /* =========================================
-   RESPONSIVIDADE (MEDIA QUERIES)
+   RESPONSIVIDADE
    ========================================= */
 @media (max-width: 768px) {
     .capa {
-        flex-direction: column-reverse; /* Imagem em cima no mobile, ou embaixo */
+        flex-direction: column-reverse;
+        /* Imagem em cima no mobile, ou embaixo */
         text-align: center;
         padding-top: 2rem;
     }
 
-    .capa h1 { font-size: 2.5rem; }
+    .capa h1 {
+        font-size: 2.5rem;
+    }
 
     .grupo-botoes {
         justify-content: center;
         flex-direction: column;
     }
 
-    .capa-imagem img { width: 100%; }
+    .capa-imagem img {
+        width: 100%;
+    }
 
     .sobre {
         flex-direction: column;
@@ -412,10 +465,14 @@ footer {
     }
 
     /* Menu Mobile */
-    .botao-mobile { display: block; color: var(--burnt-umber); }
-    
+    .botao-mobile {
+        display: block;
+        color: var(--burnt-umber);
+    }
+
     nav ul {
-        display: none; /* Esconde menu normal */
+        display: none;
+        /* Esconde menu normal */
         flex-direction: column;
         position: absolute;
         top: 70px;
@@ -423,15 +480,35 @@ footer {
         width: 100%;
         background-color: var(--sandy-beige);
         padding: 2rem;
-        box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     }
 
-    nav ul.ativo { display: flex; } 
+    nav ul.ativo {
+        display: flex;
+    }
+
     @media (max-width: 900px) {
-    .grid-cursos { padding: 0 1rem; }
-    .curso-card { flex-direction: column; text-align: center; }
-    .curso-imagem { flex-basis: auto; }
-    .curso-imagem img { width: 100%; height: auto; max-height: 360px; }
-    .curso-info { text-align: center; }
-}
+        .grid-cursos {
+            padding: 0 1rem;
+        }
+
+        .curso-card {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .curso-imagem {
+            flex-basis: auto;
+        }
+
+        .curso-imagem img {
+            width: 100%;
+            height: auto;
+            max-height: 360px;
+        }
+
+        .curso-info {
+            text-align: center;
+        }
+    }
 }
